@@ -1,0 +1,11 @@
+
+* Description
+
+My [[http://spacemacs.org/][Spacemacs]] configuration.
+
+Used to be a single =spacemacs= file in my [[https://github.com/facelesspanda/dotfiles][dotfiles]].
+I decided to switch it into its own repo.
+
+* Acknowledgements
+
+Inspired by [[https://github.com/ekaschalk/.spacemacs.d][Ekashalk's config]].
