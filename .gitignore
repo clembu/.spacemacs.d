@@ -9,3 +9,7 @@
 
 # Undo-tree save-files
 *.~undo-tree
+
+# Person-person files
+.spacemacs.env
+.custom-settings.el

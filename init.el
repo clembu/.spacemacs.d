@@ -74,6 +74,7 @@ configuration."
   (setq evil-want-abbrev-expand-on-insert-exit nil)
   (add-to-list 'configuration-layer-elpa-archives '("melpa-stable" . "stable.melpa.org/packages/"))
   (add-to-list 'package-pinned-packages '(ensime . "melpa-stable"))
+  (setq custom-file "~/.spacemacs.d/.custom-settings.el")
   )
 
 (defun dotspacemacs/user-load ()
