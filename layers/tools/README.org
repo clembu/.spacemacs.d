@@ -1,0 +1,6 @@
+* Tools layer
+
+This is the tools configuration.
+
+It includes quality-of-life utilities like version control or debuggers,
+as well as system tools like file browsers, shell interfaces, and others.

@@ -15,6 +15,8 @@ Check `dotspacemacs/get-variable-string-list' for all vars you can configure."
                                                    org-mode
                                                    pdf-view-mode
                                                    text-mode)
+   dotspacemacs-themes '(fp spacemacs-dark)
+
    dotspacemacs-pretty-docs t
 
                                         ; REPO ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -46,7 +48,10 @@ Check `dotspacemacs/get-variable-string-list' for all vars you can configure."
 This function should only modify configuration layer settings."
   (setq-default
                                         ; LAYERS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-   dotspacemacs-configuration-layers '()
+   dotspacemacs-configuration-layers '((tools :location local)
+                                       (text :location local)
+                                       (prog :location local)
+                                       (display :location local))
 
                                         ; PATH ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
    dotspacemacs-configuration-layer-path '("~/.spacemacs.d/layers/")
@@ -91,5 +96,3 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded.")
-
-
