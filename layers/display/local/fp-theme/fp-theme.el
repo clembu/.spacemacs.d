@@ -143,13 +143,13 @@ influence of C1 on the result."
                            ))
       (t :inverse-video t)))
    `(powerline-active1
-     ((,class (:foreground ,bg-light
-                           :background ,acc
+     ((,class (:foreground ,(funcall fg2 bg-dark)
+                           :background ,(col/mix acc bg-dark 0.4)
                            :box (:color ,bd-light :line-width -1 :style released-button)
                            ))))
    `(powerline-active2
-     ((,class (:foreground ,bg-light
-                           :background ,acc
+     ((,class (:foreground ,(funcall fg2 bg-dark)
+                           :background ,(col/mix acc bg-dark 0.4)
                            :box (:color ,bd-light :line-width -1 :style released-button)
                            ))))
                                         ; INACTIVE ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
