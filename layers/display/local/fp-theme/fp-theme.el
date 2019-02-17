@@ -1,4 +1,4 @@
-;;; fp-theme.el --- My theme	                       -*- lexical-binding: t; -*-
+;;; fp-theme.el --- My theme -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2019  Clement Busschaert
 
@@ -42,7 +42,7 @@ influence of C1 on the result."
        ;; BACKGROUNDS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
        (bg "#263238")
        (base "#29353b")
-       (bg2 "#fdfdfe")
+       (bg2 "#28343a")
        (bg-light "#2f3d44")
        (bg-dark "#222d32")
        (bg-dark2 "#243035")
@@ -70,7 +70,6 @@ influence of C1 on the result."
        (succ "#00e676")
        (sugg "#009688")
        (destr "#ff5252")
-       (sep "#141a1e") ;; PANEL SEPARATOR - Very Dark
 
        ;; ACCENT ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
        (acc "#4db6ac")
@@ -83,6 +82,7 @@ influence of C1 on the result."
        (bd-light "#212b30")
        (bd-dark (col/mix bg-dark "#000000" 0.06))
        (top-edge base)
+       (sep "#141a1e") ;; PANEL SEPARATOR - Very Dark
 
        ;; COLORS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
        (red "#f44336")
@@ -130,3 +130,7 @@ influence of C1 on the result."
 
 (provide-theme 'fp)
 (provide 'fp-theme)
+
+;; Local Variables:
+;; origami-fold-style: triple-braces
+;; End:
