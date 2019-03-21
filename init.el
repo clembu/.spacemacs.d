@@ -99,4 +99,14 @@ dump."
 This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
-before packages are loaded.")
+before packages are loaded."
+  (add-hook 'prog-mode-hook 'turn-on-fci-mode)
+  (add-hook 'tuareg-mode-hook
+            '(lambda ()
+               (add-hook 'before-save-hook 'delete-trailing-whitespace)
+               (setq ff-other-file-alist '(("\\.mli\\'" (".ml"))
+                                           ("\\.ml\\'" (".mli"))
+                                           ("\\.eliomi\\'" (".eliom"))
+                                           ("\\.eliom\\'" (".eliomi"))))
+               (spacemacs/set-leader-keys-for-major-mode 'tuareg-mode "ga" 'ff-get-other-file)
+               (setq mode-name "🐫"))))
