@@ -4,10 +4,14 @@
 Check `dotspacemacs/get-variable-string-list' for all vars you can configure."
   (setq-default
                                         ; DISPLAY ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-   dotspacemacs-default-font '("Hasklig"
-                               :size 13
-                               :weight normal
-                               :width normal)
+   dotspacemacs-default-font '(("Hasklig"
+                                :size 13
+                                :weight normal
+                                :width normal)
+                               ("FuraCode Nerd Font Mono"
+                                :size 11
+                                :weight normal
+                                :width normal))
    dotspacemacs-line-numbers '(:relative t
                                :disabled-for-modes dired-mode
                                                    doc-view-mode
