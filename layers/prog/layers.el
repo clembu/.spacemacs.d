@@ -4,12 +4,14 @@
    html
    elm
    docker
+   sql
 
    ;; DECLARATIVE ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
    json
    yaml
    graphviz
    LilyPond
+   csv
 
    ;; PROGRAMMING ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
    python
